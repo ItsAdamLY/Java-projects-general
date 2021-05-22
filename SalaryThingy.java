@@ -4,9 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        char status = 'p';
+        char status;
         int service_year = 5;
         double salary = 200.00;
+	    
+	Scanner input = new Scanner(System.in);
+	    
+	System.out.print("Input status :");
+	status = input.next().charAt(0);    
 
         if (status == 'F' || status == 'f'){
             if (service_year < 5){
