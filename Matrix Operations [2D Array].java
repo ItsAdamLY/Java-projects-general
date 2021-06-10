@@ -5,7 +5,6 @@ public class Main {
     public static int ROW;
     public static int COL;
 
-    // global declaration of variables in Java is denoted by private static dataType[array]
     public static int i, j;
     private static final Scanner input = new Scanner(System.in);
 
@@ -30,6 +29,8 @@ public class Main {
 
             if (COL <1) System.out.println("Error! Invalid value.");
         } while (COL < 1);
+        
+       // for Array declaration in Java, it's not dataType var[][] as in C lang, but rather dataType[][] var;
 
         int[][] Mat_A = new int[ROW][COL]; // declaration of array is as follows
         int[][] Mat_B = new int[ROW][COL];
@@ -38,7 +39,7 @@ public class Main {
         {
             for (j=0; j<COL; j++)
             {
-                // for Array declaration in Java, it's not dataType var[][], but rather dataType[][] var;
+
                 System.out.print("Enter Matrix A [" + i + "] [" + j + "] : ");
                 Mat_A[i][j] = input.nextInt();
             }
@@ -48,7 +49,6 @@ public class Main {
         {
             for (j=0; j<COL; j++)
             {
-                // for Array declaration in Java, it's not dataType var[][], but rather dataType[][] var;
                 System.out.print("Enter Matrix B [" + i + "] [" + j + "] : ");
                 Mat_B[i][j] = input.nextInt();
             }
