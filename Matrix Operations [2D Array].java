@@ -24,7 +24,7 @@ public class Main {
 
         do
         {
-            System.out.print("Input Row : ");
+            System.out.print("Input Column : ");
             COL = input.nextInt();
 
             if (COL <1) System.out.println("Error! Invalid value.");
